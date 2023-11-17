@@ -14,6 +14,8 @@ export default function Home() {
         <h1>Next.JS Hosted on EC2</h1>
 
         <Link href="/server">Navigate to SSR page</Link>
+        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+        <a href="/app-two/">Change Micro Frontend</a>
       </main>
     </>
   );

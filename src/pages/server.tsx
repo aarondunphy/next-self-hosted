@@ -13,6 +13,8 @@ export default function ServerPage({ names }: ServerPageProps) {
       <Link href="/">Go Home</Link>
       <div>Names: {names.join(", ")}</div>
       <Image src="/pixel.png" alt="Pixel" width={96} height={96} />
+      {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+      <a href="/app-two/">Change Micro Frontend</a>
     </div>
   );
 }
