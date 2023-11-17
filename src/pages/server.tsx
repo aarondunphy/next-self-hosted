@@ -1,4 +1,5 @@
 import { GetServerSideProps } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -11,6 +12,7 @@ export default function ServerPage({ names }: ServerPageProps) {
     <div>
       <Link href="/">Go Home</Link>
       <div>Names: {names.join(", ")}</div>
+      <Image src="/pixel.png" alt="Pixel" width={96} height={96} />
     </div>
   );
 }
